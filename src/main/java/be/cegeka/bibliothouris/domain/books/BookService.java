@@ -16,7 +16,9 @@ public class BookService {
 
 
     public void addBook(String name, long ISBN) {
-        bookRepository.addBook(new Book(name, ISBN) );
+        Book testBook = new Book(name, ISBN);
+        System.out.println(testBook);
+        bookRepository.addBook(testBook);
     }
 
     public List<Book> getAllBooks() {

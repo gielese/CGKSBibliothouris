@@ -1,6 +1,7 @@
 package be.cegeka.bibliothouris.domain.books;
 
 import javax.inject.Named;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,13 +10,14 @@ import java.util.List;
 @Named
 public class BookRepository {
 
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     public List<Book> getAllBooks() {
         return books;
     }
 
     public void addBook(Book book) {
+        System.out.println(book);
         books.add(book);
     }
 }

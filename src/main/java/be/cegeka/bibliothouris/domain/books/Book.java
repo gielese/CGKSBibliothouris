@@ -19,7 +19,16 @@ public class Book {
         this.authorLastName = authorLastName;
     }
 
+    public String getAuthorFirstName() {
+        return authorFirstName;
+    }
+
+    public String getAuthorLastName() {
+        return authorLastName;
+    }
+
     public String getTitle() {
+
         return title;
     }
 

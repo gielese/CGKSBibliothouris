@@ -17,7 +17,6 @@ public class BookRepository {
     }
 
     public void addBook(Book book) {
-        System.out.println(book);
         books.add(book);
     }
 }

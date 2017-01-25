@@ -29,7 +29,6 @@ public class BookController {
     public
     @ResponseBody
     void addBook(@RequestParam(value = "title") String title, @RequestParam(value = "ISBN") long ISBN) {
-        System.out.println(title + ISBN);
         bookService.addBook(title, ISBN);
     }
 
